@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Untitled Sans,Arial,Helvetica,sans-serif;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+.list li {
+    float: left;
+}
+
+.list li {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    flex-flow: row wrap;
+}
+
+li:hover{
+    text-decoration: underline;
+    color:  rgb(51 102 51);
+}
+
+.header {
+    position: fixed;
+    width: 1880px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 75px;
+    background-color: white;
+}
+
+.list li a{
+   margin-right: 30px;
+   font-size: 16px;
+   color: #008561;
+   text-decoration: none;
+}
+
+.nav_bar, .buttons {
+    margin-top: 20px;
+}
+
+.sign_in_btn {
+    height: 38px;
+    width: 106px;
+    color: #008561;
+    border: 1px solid #008561;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.request_btn {
+    height: 38px;
+    width: 110px;
+    color:  white;
+    border: 1px solid #3574d6;
+    border-radius: 25px;
+    background-color: #3574d6;
+}
+
+@media(max-width: 768px){
+    .mainMenu {
+         display: none;
+    }
+    .mainMenu.toggleCls{
+        display: block;
+    }
+}
+
+@media(min-width: 769px) {
+    .hamIcon{
+        display: none;
+    }
+    .mainMenu {
+        display: none;
+    }
+}
+
+.mainMenu li a {
+    color: #008561;
+}
+
+.main {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.description {
+    width: 400px;
+}
+.img_1{
+    width: 783px;
+    height: 800;
+}
+
+.heading {
+    font-size: 32px;
+    color: #008561;
+    margin-top: 250px;
+}
+
+.description_text {
+    line-height: 1.5;
+}
+
+.description_btn {
+    width: 186px;
+    height: 49px;
+    border-radius: 33px;
+    border: 1px solid #3574d6;
+    color: white;
+    background-color: #3574d6;
+    margin-top: 20px;
+}
+
+.description_link {
+    color: black;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: auto;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+} 
+
+.img_2, .img_3, .img_4 {
+    width: 590px;
+    height: 800px;
+}
+
+
+/* Slideshow  */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #008561;
+    font-weight: bold;
+    font-size: 31px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-right: -169px;
+}
+  
+.prev {
+      margin-left: -149px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.image_slide {
+    width: 1180px;
+    margin-left: -100px;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+ @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn button {
+    height: 70px;
+    background-color: white;
+    border: 1px solid black;
+    opacity: 0.7;
+    font-size: 16px;
+    width: 400px;
+}
+
+.footer {
+    height: 300px;
+    background-color: #008561;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.footer ul{
+     margin-top: 90px;
+     list-style-type: none;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    opacity: 2.7;
+}
